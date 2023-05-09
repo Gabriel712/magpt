@@ -1,0 +1,6 @@
+
+type StoreConfig {
+    
+    gpt_gptconfig_gptstatus  : String  @doc(description: "Query by gpt_gptconfig_gptstatus.") 
+    gpt_gptconfig_gptkey  : String  @doc(description: "Query by gpt_gptconfig_gptkey.") 
+}

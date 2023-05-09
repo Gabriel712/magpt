@@ -1,0 +1,40 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+	<system>
+		<tab id="MaGPT" translate="label" sortOrder="999">
+			<label>MaGPT</label>
+		</tab>
+		<section id="gpt" sortOrder="10" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
+			<label>GPT Config</label>
+			<tab>MaGPT</tab>
+			<resource>Iagen_MaGPT::config_iagen_magpt</resource>
+			<group id="gptconfig" sortOrder="10" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
+				<label>GPT Config</label>
+				<field id="gptstatus" type="select" sortOrder="10" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
+					<label>GPT Enable</label>
+					<comment/>
+					<source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+				</field>
+				<field id="gptkey" type="text" sortOrder="10" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
+					<label>GPT Key</label>
+					<comment/>
+				</field>
+
+				
+			</group>
+		</section>
+
+		<section id="gpt_prompt_section" sortOrder="10" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
+			<label>GPT Prompt</label>
+			<tab>MaGPT</tab>
+			<resource>Iagen_MaGPT::config_iagen_magpt</resource>
+			<group id="gpt_prompt" sortOrder="10" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
+				<label>GPT Config</label>
+				<field id="gpt_prompt_product" type="textarea" sortOrder="20" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
+					<label>Prompt product</label>
+					<comment>Prompt for product generation</comment>
+				</field>
+			</group>
+		</section>
+	</system>
+</config>

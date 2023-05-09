@@ -1,0 +1,22 @@
+{
+    "name": "iagen/module-magpt",
+    "description": "Integrate GPT with magento",
+    "type": "magento2-module",
+    "license": "GPL-3.0",
+    "authors": [
+        {
+            "name": "Gabriel S. Santos",
+            "email": "frix131@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Iagen\\MaGPT\\": ""
+        }
+    }
+}
