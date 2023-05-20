@@ -10,5 +10,10 @@
 				<gpt_prompt_product/>
 			</gpt_prompt>
 		</gpt>
+		<gpt_prompt_section>
+			<gpt_prompt>
+				<gpt_prompt_product>Responda somente em json.{ "product_name": "", "meta_title": "","meta_keyword": "","meta_description": ""}Imagine, crie, mas nao deixe campos vazios.product_name:$product_name,meta_title:$meta_title,meta_keyword:$meta_keyword,meta_description:$meta_description</gpt_prompt_product>
+			</gpt_prompt>
+		</gpt_prompt_section>
 	</default>
 </config>
